@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: blueviolet;
+        }
+
+        div > div{
+            background: rebeccapurple;
+        }
+        .es{
+            background: red;
+        }
+
+        div + section{
+            background: yellowgreen;
+        }
+
+        div ~ p{
+            color: aqua;
+        }
+        ol{
+            color: coral;
+        }
+        ol :hover{
+            color: blue;
+        }
+        ol :focus{
+            color: black;
+        }
+        ol li:nth-child(3){
+            color: lightseagreen;
+        }
+
+        ol li::first-letter{
+            color: black;
+        }
+
+        ol li::before{
+            content: "*";    
+        }
+
+        ol li::after{
+            content: "+++++++++";
+        }
+
+        ::placeholder{
+            color:darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Platzi</p>
+            <div class="es">Es</div>
+        </div>       
+    </div>
+    <p>Clase de selectores</p>
+    <p>Clase de selectores2</p>
+    <section>
+        Es lo mejor     
+    </section>
+    <div>Prueba</div>
+    <div>
+        <ol>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+            <li>Cinco</li>
+        </ol>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>

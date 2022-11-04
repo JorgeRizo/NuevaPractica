@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layout{
+            display: grid;
+           /*  grid-template-rows: 1fr 1fr 1fr; */
+           /*  grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-areas: 
+                ". menu";
+        }
+        .container{
+            display: flex;
+            width: auto;
+            height: auto;
+            grid-area: menu;
+        }
+        .item{
+            width: 30px;
+            height: 30px;
+            padding: 40px;
+            background: lawngreen;
+        }
+        .content{
+            grid-area: content;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="container"> 
+            <div class="item">Latest</div>
+            <div class="item">Post</div>
+            <div class="item">Snippest</div>
+            <div class="item">Goddies</div>
+            <div class="item">Others</div>
+        </div>
+        <div class="content">Contenido</div>
+        <div>Table of contents</div>
+    </div>
+</body>
+</html>

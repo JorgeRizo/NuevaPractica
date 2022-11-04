@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+            width: 300px;
+            height: 300px;
+            background: papayawhip;
+            border-radius: 20px;/*Para redondear los paneles de una imagen cuadrada*/
+            overflow: hidden; /*Para esconder los picos que se salen de la imagen curveada*/
+           
+        }
+        .card img {
+            width: 100%;
+        }
+        .card p{
+            font-style: oblique;
+            font-weight: 500;
+            text-align: center;
+        }
+        .card p:nth-child(3){
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/7210692/pexels-photo-7210692.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="dog">
+            <p>Dog: Rocko</p>
+            <p>Raza</p>
+        </div>
+    </section>
+</body>
+</html>
